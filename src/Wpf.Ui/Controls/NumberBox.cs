@@ -5,6 +5,7 @@
 
 using System;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Globalization;
 using System.Text.RegularExpressions;
@@ -220,7 +221,7 @@ public class NumberBox : Wpf.Ui.Controls.TextBox
     public NumberBox()
     {
         DataObject.AddPastingHandler(this, OnClipboardPaste);
-
+        TextCompositionManager.AddPreviewTextInputStartHandler(this, new TextCompositionEventHandler(OnPreviewTextInput));
         Loaded += OnLoaded;
     }
 
@@ -333,7 +334,7 @@ public class NumberBox : Wpf.Ui.Controls.TextBox
     private bool IsNumberTextValid(string inputText)
     {
         // If the mask is used this method will not work
-
+        Debug.WriteLine(inputText);
         var decimalPlaces = DecimalPlaces;
         var integerRegex = new Regex(_integerExpression);
         var decimalRegex = new Regex(_decimalExpression);
@@ -430,7 +431,7 @@ public class NumberBox : Wpf.Ui.Controls.TextBox
     }
 
     /// <inheritdoc />
-    protected override void OnPreviewTextInput(TextCompositionEventArgs e)
+    protected void OnPreviewTextInput(object sender, TextCompositionEventArgs e)
     {
         var newText = Text + (e.Text ?? String.Empty);
 

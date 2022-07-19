@@ -238,10 +238,10 @@
                                     Grid.Column="0"
                                     Margin="{StaticResource TextBoxLeftIconMargin}"
                                     Padding="0"
-                                    FontSize="{TemplateBinding FontSize}"
-                                    VerticalAlignment="Center"
                                     HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
                                     Filled="{TemplateBinding IconFilled}"
+                                    FontSize="{TemplateBinding FontSize}"
                                     Foreground="{TemplateBinding IconForeground}"
                                     Symbol="{TemplateBinding Icon}" />
                                 <Grid Grid.Column="1" Margin="{TemplateBinding Padding}">
@@ -295,10 +295,10 @@
                                     Grid.Column="3"
                                     Margin="{StaticResource TextBoxRightIconMargin}"
                                     Padding="0"
-                                    FontSize="{TemplateBinding FontSize}"
-                                    VerticalAlignment="Center"
                                     HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
                                     Filled="{TemplateBinding IconFilled}"
+                                    FontSize="{TemplateBinding FontSize}"
                                     Foreground="{TemplateBinding IconForeground}"
                                     Symbol="{TemplateBinding Icon}" />
                             </Grid>
