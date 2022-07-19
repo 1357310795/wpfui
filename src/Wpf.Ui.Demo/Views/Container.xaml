@@ -194,14 +194,13 @@
         -->
         <ui:TitleBar
             Title="WPF UI - Fluent design system"
-            Grid.Row="0"
             ForceShutdown="False"
             Icon="pack://application:,,,/Resources/wpfui.png"
             MinimizeToTray="False"
             ShowHelp="False"
             ShowMaximize="True"
             ShowMinimize="True"
-            UseSnapLayout="True">
+            UseSnapLayout="True" Margin="0,0,0,0" VerticalAlignment="Center">
             <ui:TitleBar.Tray>
                 <ui:NotifyIcon
                     FocusOnLeftClick="True"

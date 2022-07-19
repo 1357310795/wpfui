@@ -164,7 +164,7 @@ public partial class Container : INavigationWindow
         // to which the banner will cover the entire page nicely.
         RootFrame.Margin = new Thickness(
             left: 0,
-            top: sender?.Current?.PageTag == "dashboard" ? -69 : 0,
+            top: sender?.Current?.PageTag == "dashboard" ? -67 : 0,
             right: 0,
             bottom: 0);
     }

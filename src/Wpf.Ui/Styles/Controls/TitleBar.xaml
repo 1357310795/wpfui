@@ -89,7 +89,7 @@
         </Setter>
         <Setter Property="VerticalAlignment" Value="Top" />
         <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="Padding" Value="16" />
+        <Setter Property="Padding" Value="10,6" />
         <Setter Property="FontSize" Value="12" />
         <Setter Property="FontWeight" Value="Normal" />
         <Setter Property="Focusable" Value="False" />
