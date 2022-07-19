@@ -21,7 +21,9 @@
   <PropertyGroup>
     <GeneratePackageOnBuild Condition="'$(Configuration)'=='Release'">true</GeneratePackageOnBuild>
     <GenerateDocumentationFile Condition="'$(Configuration)'=='Release'">true</GenerateDocumentationFile>
-    <PackageIcon>wpfui.png</PackageIcon>
+    <PackageIcon>wpfuienhanced.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/1357310795/wpfui</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/1357310795/wpfui</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -29,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\branding\wpfui.png">
+    <None Include="..\..\branding\wpfuienhanced.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
