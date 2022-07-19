@@ -159,7 +159,30 @@
         <ui:CodeBlock Margin="0,8,0,0">
             &lt;ui:TextBox Icon=&quot;Fluent24&quot; PlaceholderText=&quot;Hello World&quot; /&gt;
         </ui:CodeBlock>
-
+        <TextBlock
+            Margin="0,8,0,0"
+            Foreground="{DynamicResource TextFillColorSecondaryBrush}"
+            Text="WPF UI TextBox with Icon and Dismiss Button (larger fontsize)" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <ui:TextBox
+                Grid.Column="0"
+                Margin="0,8,4,0"
+                Icon="Cut24"
+                FontSize="20" ClearButtonEnabled="True"
+                PlaceholderText="Hello World" />
+            <ui:TextBox
+                Grid.Column="1"
+                Margin="4,8,0,0"
+                Icon="QuizNew48"
+                FontSize="20"
+                IconPlacement="Right"
+                PlaceholderText="Hello World"
+                Text="The cake is a lie!" />
+        </Grid>
         <TextBlock
             Margin="0,24,0,0"
             FontSize="16"
