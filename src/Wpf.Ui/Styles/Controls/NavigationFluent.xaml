@@ -269,7 +269,7 @@
                         Margin="0"
                         Padding="0"
                         HorizontalScrollBarVisibility="Disabled">
-                        <Grid Width="250" HorizontalAlignment="Left">
+                        <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*" />
                                 <RowDefinition Height="Auto" />
@@ -277,7 +277,6 @@
 
                             <ItemsControl
                                 Grid.Row="0"
-                                Width="250"
                                 Focusable="False"
                                 ItemsSource="{TemplateBinding Items}"
                                 KeyboardNavigation.DirectionalNavigation="Contained"
